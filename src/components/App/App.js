@@ -1,9 +1,10 @@
+import HomePage from "../HomePage";
 
 
 const App = () => {
   return (
     <div>
-      hello
+      <HomePage />
     </div>
   );
 }

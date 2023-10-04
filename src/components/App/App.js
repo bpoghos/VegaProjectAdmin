@@ -1,10 +1,13 @@
 import HomePage from "../HomePage";
+import PostPage from "../PostPage";
+
 
 
 const App = () => {
   return (
     <div>
-      <HomePage />
+      {/* <HomePage /> */}
+      <PostPage />
     </div>
   );
 }

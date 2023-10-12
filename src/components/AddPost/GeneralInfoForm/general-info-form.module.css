@@ -1,0 +1,10 @@
+.categoryBtn button{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    color: #000;
+    background-color: #fff;
+    border-color: #dee2e6;
+}

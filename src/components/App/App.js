@@ -1,13 +1,11 @@
-import HomePage from "../HomePage";
-import PostPage from "../PostPage";
-
+import RootRouter from "../RootRouter";
 
 
 const App = () => {
+
   return (
     <div>
-      {/* <HomePage /> */}
-      <PostPage />
+      <RootRouter />
     </div>
   );
 }

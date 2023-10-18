@@ -1,41 +1,27 @@
-import { Button, Col, Container, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import classes from './categories.module.css'
+import { CATEGORIES } from "../../../helpers/constants"
 
 const Categories = () => {
+
+
+    const onResidentalStructureBtn = (event) => {
+        console.log(event.target.innerText);
+
+    }
+
     return (
-            <Container className="mb-4">
-                <Row>
-                    <Col className="mb-4">
-                        <div className={classes.category}>
-                            Houses
+        <Container className="mb-4">
+            <Row>
+                {CATEGORIES.map((c) => {
+                   return <Col className="mb-4" key={c.value}>
+                        <div className={classes.category} onClick={onResidentalStructureBtn}>
+                            {c.label}
                         </div>
                     </Col>
-                    <Col>
-                        <div className={classes.category}>
-                            residental <br/>
-                            buldings
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className={classes.category}>
-                            residental<br/>
-                            Area
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className={classes.category}>
-                            public<br/>
-                            spaces
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className={classes.category}>
-                            small<br/>
-                            architecture
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+                })}
+            </Row>
+        </Container>
     )
 }
 
